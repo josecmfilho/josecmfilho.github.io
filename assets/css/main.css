@@ -2146,6 +2146,20 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
+		.image.logo {
+			border-radius: 100%;
+		}
+
+			.image.logo:before {
+				display: none;
+			}
+
+			.image.logo img {
+				border-radius: 100%;
+				width: 100%;
+			}
+
 /* List */
 
 	ol {
@@ -2641,6 +2655,11 @@ input, select, textarea {
 		#header .image.avatar {
 			margin: 0 0 1em 0;
 			width: 6.25em;
+		}
+
+		#header .image.logo {
+			margin: 0 0 1em 0;
+			width: 7.5em;
 		}
 
 /* Footer */
