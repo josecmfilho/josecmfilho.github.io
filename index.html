@@ -45,41 +45,61 @@
 		<!-- One -->
 		<section id="one">
 			<div class="container">
-				<div class="col-12-mobile">
-					<label>Verbas a calcular</label>
-					<table class="wagetable" id="wagetable" name="wagetable">
-						<thead>
-							<tr>
-								<th><span class="add-row glyphicon glyphicon-plus"></span></th>
-								<th>Código</th>
-								<th>Descrição</th>
-								<th>Valor</th>
-								<th>Quantidade</th>
-								<th>Fator</th>
-							</tr>
-						</thead>
-						<tbody id="tbody" name="tbody">
-							<tr class="hidden" id="tr" name="tr">
-								<td><span class="delete-row glyphicon glyphicon-remove"></span></td>
-								<td name="tdcodigo" id="tdcodigo" contenteditable=true>1</td>
-								<td name="tddescricao" id="tddescricao" contenteditable=true>texto</td>
-								<td name="tdvalor" id="tdvalor" contenteditable=true>1</td>
-								<td name="tdquant" id="tdquant" contenteditable=true>1</td>
-								<td name="tdfator" id="tdfator" contenteditable=true>1</td>
-							</tr>
-						</tbody>
-					</table>
-					<input id="tableinfo" name="tableinfo" class="hidden" />
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-6 col-12-mobile">
-						<input type="reset" id="reset" class="icon fas fa-trash" name="reset" value="Inicializar" />
-						<input type="submit" id="submit" class="icon fas fa-sync" name="submit" value="Calcular" />
-					</div>
-				</div>
-			</div>
+				<form method="post" action="#">
 
+
+					<script id="script1"></script>
+
+					<script id="script2"></script>
+
+					<script id="script3"></script>
+
+					<div class="col-6 col-12-mobile">
+						<div>
+							<label>Modelo</label>
+							<div class="template">
+								<select name="template" id="template" class="templateWages">
+									<option value=1 selected="selected">Selecionar</option>
+								</select>
+							</div>
+						</div><br>
+					</div>
+
+					<div class="col-12-mobile">
+						<label>Verbas a calcular</label>
+						<table class="wagetable" id="wagetable" name="wagetable">
+							<thead>
+								<tr>
+									<th><span class="add-row glyphicon glyphicon-plus"></span></th>
+									<th>Código</th>
+									<th>Descrição</th>
+									<th>Valor</th>
+									<th>Quantidade</th>
+									<th>Fator</th>
+								</tr>
+							</thead>
+							<tbody id="tbody" name="tbody">
+								<tr class="hidden" id="tr" name="tr">
+									<td><span class="delete-row glyphicon glyphicon-remove"></span></td>
+									<td name="tdcodigo" id="tdcodigo" contenteditable=true>1</td>
+									<td name="tddescricao" id="tddescricao" contenteditable=true>texto</td>
+									<td name="tdvalor" id="tdvalor" contenteditable=true>1</td>
+									<td name="tdquant" id="tdquant" contenteditable=true>1</td>
+									<td name="tdfator" id="tdfator" contenteditable=true>1</td>
+								</tr>
+							</tbody>
+						</table>
+						<input id="tableinfo" name="tableinfo" class="hidden" />
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-6 col-12-mobile">
+							<input type="reset" id="reset" class="icon fas fa-trash" name="reset" value="Inicializar" />
+							<input type="submit" id="submit" class="icon fas fa-sync" name="submit" value="Calcular" />
+						</div>
+					</div>
+				</form>
+			</div>
 		</section>
 
 		<!-- Two -->
