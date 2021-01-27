@@ -54,21 +54,23 @@
 
 					<script id="script3"></script>
 
+					<label>
+						<h3>Payment</h3>
+					</label>
+
 					<div class="col-6 col-12-mobile">
 						<div>
-							<label>Model</label>
+							<label> Model </label>
 							<div class="template">
 								<select name="template" id="template" class="templateWages">
-									<option value=1 selected="selected">Selecionar</option>
+									<option value=1 selected="selected">Select</option>
 								</select>
 							</div>
 						</div><br>
 					</div>
 
 					<div class="col-12-mobile">
-						<label>
-							<h3>Wages types</h3>
-						</label>
+						<label>Wages types </label>
 						<table class="wagetable" id="wagetable" name="wagetable">
 							<thead>
 								<tr>
@@ -99,8 +101,8 @@
 					<br>
 					<div class="row">
 						<div class="col-6 col-12-mobile">
-							<input type="reset" id="reset" class="icon fas fa-trash" name="reset" value="Inicializar" />
-							<input type="submit" id="submit" class="icon fas fa-sync" name="submit" value="Calcular" />
+							<input type="reset" id="reset" class="icon fas fa-trash" name="reset" value="Reset" />
+							<input type="submit" id="submit" class="icon fas fa-sync" name="submit" value="Submit" />
 						</div>
 					</div>
 				</form>
@@ -110,25 +112,27 @@
 		<!-- Two -->
 		<section id="two">
 			<div class="container">
-				<div class="col-12-mobile" class="hidden">
-					<label>
-						<h3>Results</h3>
-					</label>
-					<table class="wagetabout" id="wagetabout" name="wagetabout">
-						<thead>
-							<tr>
-								<th>Nature</th>
-								<th>Code</th>
-								<th>Description</th>
-								<th>Value</th>
-								<th>Quantity</th>
-								<th>Factor</th>
-							</tr>
-						</thead>
-						<tbody id="tbodyout" name="tbodyout">
-						</tbody>
-					</table>
-					<input id="tableout" name="tableout" class="hidden" />
+				<div id="worksheet" class="hidden">
+					<div class="col-12-mobile">
+						<label>
+							<h3>Worksheet</h3>
+						</label>
+						<table class="wagetabout" id="wagetabout" name="wagetabout">
+							<thead>
+								<tr>
+									<th>Nature</th>
+									<th>Code</th>
+									<th>Description</th>
+									<th>Value</th>
+									<th>Quantity</th>
+									<th>Factor</th>
+								</tr>
+							</thead>
+							<tbody id="tbodyout" name="tbodyout">
+							</tbody>
+						</table>
+						<input id="tableout" name="tableout" class="hidden" />
+					</div>
 				</div>
 			</div>
 		</section>
