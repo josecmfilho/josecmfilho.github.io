@@ -31,9 +31,9 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><a href="#one" id="art1-link"><span class="icon solid fa-home">Pagamento</span></a></li>
-				<li><a href="#two" id="art2-link"><span class="icon solid fa-th">Planilha</span></a> </li>
-				<li><a href="#three" id="art3-link"><span class="icon solid fa-chart-area">Análise</span></a></li>
+				<li><a href="#one" id="art1-link"><span class="icon solid fa-home">Payment</span></a></li>
+				<li><a href="#two" id="art2-link"><span class="icon solid fa-th">Worksheet</span></a> </li>
+				<li><a href="#three" id="art3-link"><span class="icon solid fa-chart-area">Analysis</span></a></li>
 			</ul>
 		</nav>
 
@@ -56,7 +56,7 @@
 
 					<div class="col-6 col-12-mobile">
 						<div>
-							<label>Modelo</label>
+							<label>Model</label>
 							<div class="template">
 								<select name="template" id="template" class="templateWages">
 									<option value=1 selected="selected">Selecionar</option>
@@ -66,26 +66,31 @@
 					</div>
 
 					<div class="col-12-mobile">
-						<label>Verbas a calcular</label>
+						<label>
+							<h3>Wages types</h3>
+						</label>
 						<table class="wagetable" id="wagetable" name="wagetable">
 							<thead>
 								<tr>
 									<th><span class="add-row glyphicon glyphicon-plus"></span></th>
-									<th>Código</th>
-									<th>Descrição</th>
-									<th>Valor</th>
-									<th>Quantidade</th>
-									<th>Fator</th>
+									<th>Nature</th>
+									<th>Code</th>
+									<th>Description</th>
+									<th>Value</th>
+									<th>Quantity</th>
+									<th>Factor</th>
 								</tr>
 							</thead>
 							<tbody id="tbody" name="tbody">
 								<tr class="hidden" id="tr" name="tr">
 									<td><span class="delete-row glyphicon glyphicon-remove"></span></td>
+									<td name="tdnature" id="tdnature" contenteditable=true>1</td>
 									<td name="tdcodigo" id="tdcodigo" contenteditable=true>1</td>
 									<td name="tddescricao" id="tddescricao" contenteditable=true>texto</td>
 									<td name="tdvalor" id="tdvalor" contenteditable=true>1</td>
 									<td name="tdquant" id="tdquant" contenteditable=true>1</td>
 									<td name="tdfator" id="tdfator" contenteditable=true>1</td>
+
 								</tr>
 							</tbody>
 						</table>
@@ -106,15 +111,18 @@
 		<section id="two">
 			<div class="container">
 				<div class="col-12-mobile" class="hidden">
-					<label>Verbas calculadas</label>
+					<label>
+						<h3>Results</h3>
+					</label>
 					<table class="wagetabout" id="wagetabout" name="wagetabout">
 						<thead>
 							<tr>
-								<th>Código</th>
-								<th>Descrição</th>
-								<th>Valor</th>
-								<th>Quantidade</th>
-								<th>Fator</th>
+								<th>Nature</th>
+								<th>Code</th>
+								<th>Description</th>
+								<th>Value</th>
+								<th>Quantity</th>
+								<th>Factor</th>
 							</tr>
 						</thead>
 						<tbody id="tbodyout" name="tbodyout">
